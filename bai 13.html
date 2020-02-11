@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>du lich</title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Đăng ký du lịch</h2>
+    <table>
+        <tr>
+            <td>Họ và tên</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Khách hàng Việt Nam</td>
+            <td>
+                <input type="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <td>Chọn tour</td>
+            <td>
+                <select>
+                    <optgroup label="Miền bắc">
+                        <option>Hà Nội-hạ long-sapa</option>
+                        <option>ha noi-chua hương-Ninh bình</option>
+                        <option>hà nội- cát bà-tuấn châu</option>
+                    </optgroup>
+                    <optgroup label="Miền trung">
+                        <option>huế-bạch mã-đà lạt</option>
+                        <option>nha trang-đà lạt</option>
+                        <option>buôn mê thuật-gia lai-kontum</option>
+                    </optgroup>
+                    <optgroup label="Miền Nam">
+                        <option>tp hcm-cần thơ-cà mau</option>
+                        <option>tp hcm-mỹ tho</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Phương tien</td>
+            <td>
+                <input type="radio"> Máy bay
+                <input type="radio"> Xe ô tô
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend>Số lượng đoàn khách</legend>
+                    <p style="text-align: center;">
+                        Người lớn<input type="text" size="5px">
+                        trẻ em<input type="text" size="5px">
+                    </p>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; height: 50px;">
+                Ghi chú thêm
+            </td>
+            <td>
+                <textarea rows="3" cols="30"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button onclick="myFunction()" type="button">Đòng ý</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="success" colspan="2" style="text-align: center;"></td>
+        </tr>
+    </table>
+    <script>
+        function myFunction() {
+            document.getElementById("success").innerText = "Bạn đã đăng ký thành công!"
+        }
+    </script>
+</body>
+
+</html>
