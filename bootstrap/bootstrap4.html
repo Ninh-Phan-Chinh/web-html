@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ví dụ Bootstrap 4 --- dammio.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+        
+    body {
+        margin: 15px auto;
+        padding: 50px;
+    }
+
+    #rental-tab {
+        background:  rgb(233,193,2);
+        border-radius: 0px;
+    }
+
+    #li-rental-tab {
+        float: right;
+    }
+
+    .nav.nav-pills li a {
+        color: rgb(92,71,0);
+        height: 50px;
+        text-align: center;
+    }
+    
+    .nav.nav-pills li {
+         min-width: 150px;
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+        background: none;
+        color: rgb(92,71,0);
+    }
+
+    #panel-btn-submit {
+        background:  rgb(237,197,4);
+        height: 100px;
+    }
+
+    #submit-btn{
+        margin: 25px auto;
+        height: 50px;
+        width: 200px;
+        background:  rgb(246,212,54);
+        color: rgb(92,71,0);
+        border: 1px rgb(92,71,0);
+    }
+</style>
+</head>
+<body>
+  <div role="tabpanel" id="container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active" id="hotel-tab">
+            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">HOTEL</a>
+        </li>
+        <li role="presentation" id="li-rental-tab">
+            <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab" id="rental-tab">CAR RENTAL</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <form action="" method="POST" class="form-horizontal" role="form">
+                <br/>
+                    <div class="form-group">
+                          <div class="row">
+                            <select name="" id="input" class="form-control" required="required">
+                                <option value="hotel">-- Select Hotel --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                           <div class="row">
+                                   <div class='input-group date' id='datetimepicker2'>
+                                      <input type='text' class="form-control" placeholder="Check-in Date"/>
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-calendar"></span>
+                                     </span>
+                                </div>
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                           <div class="row">
+                                   <div class='input-group date' id='datetimepicker2'>
+                                      <input type='text' class="form-control" placeholder="Check-out Date"/>
+                                    <span class="input-group-addon">
+                                           <span class="glyphicon glyphicon-calendar"></span>
+                                     </span>
+                                </div>
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                          <div class="row">
+                            <select name="" id="input" class="form-control" required="required">
+                                <option value="guests">-- Guests --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row" id="panel-btn-submit">
+                            <center>
+                                <button type="submit" class="btn btn-primary" id="submit-btn">CHECK NOW</button>
+                            </center>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        
+        <div role="tabpanel" class="tab-pane" id="tab">
+            Bạn tự làm nhé 
+        </div>
+    </div>
+</div>
+</body>
+</html>

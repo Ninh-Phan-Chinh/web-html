@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .map-container {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-container iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body class="bg-info">
+  <div class="container mt-4">
+
+    <div class="row mb-5">
+      <div class="col-md-6 col-sm-12">
+        <!--Google map-->
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 100%">
+          <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <!--Google Maps-->
+      </div>
+      <!-- column 2 -->
+      <div class="col-md-6 col-sm-12 mt-3">
+        <h2 class="text-white">Contattaci</h2>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mb-3">
+            <input type="text" class="form-control" placeholder="nome/societa">
+          </div>
+          <div class="col-md-6 col-sm-12 mb-3">
+            <input type="text" class="form-control" placeholder="Oggetto">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mb-3">
+            <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <input type="number" class="form-control" placeholder="Telefono">
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <textarea placeholder="Inserisci testo" class="form-control" rows="3" id="comment"></textarea>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="check2">
+            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Accetta le condizioni
+          </label>
+        </div>
+        <button type="button" class="btn border mt-3 mb-3" style="background-color: blanchedalmond;">Basic</button>
+        <h3 class="text-white">DOVE SIAMO</h3>
+      <p>
+        <span class="fa fa-phone text-white"></span>
+        <span class="text-white">(+39) 123456</span>
+      </p>
+      <p>
+        <span class="fa fa-phone text-white"></span>
+        <span class="text-white">(+39) 123456</span>
+      </p>
+      <p>
+        <span class="fa fa-envelope text-white"></span>
+        <span class="text-white">info@test.it</span>
+      </p>
+      <p>
+        <span class="fa fa-globe text-white"></span>
+        <span class="text-white">Piazza del Colosseo, 1, 00184 Roma</span>
+      </p>
+      <p>
+        <span class="fa fa-globe text-white"></span>
+        <span class="text-white">Piazza del Colosseo, 1, 00184 Roma</span>
+      </p>
+      <p>
+        <i class="fa fa-facebook-square" style="font-size:48px;color:white"></i>
+        <span class="fa fa-linkedin-square ml-4" style="font-size:48px;color:white"></span>
+      </p>
+      </div>
+      
+    </div>
+
+  </div>
+  <!-- footer -->
+  <div class="container-fluid bg-success text-center p-4">
+    <h3 class="text-white">by P.Fattoruso</h3>
+    <span class="fa fa-linkedin-square ml-4" style="font-size:48px;color:white"></span>
+  </div>
+</body>
+
+</html>

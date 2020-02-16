@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .button {
+            min-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center py-5">
+            <img src="imgBootstrap/girl.jpg" height="70px" width="70px">
+            <h2>Checkout form</h2>
+            <p class="lead">Below is an example form built entirely with Bootstrap's
+                form controls. Each required form group has a
+                validation state that can be triggered by attempting
+                to submit the form without completing it.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 order-md-2">
+                <h4 class="justify-content-between align-items-center d-flex mb-3">
+                    <span class="text-muted">Your cart</span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between ">
+                        <div>
+                            <h6 class="my-0">product name</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between ">
+                        <div>
+                            <h6 class="my-0">Second product</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between ">
+                        <div>
+                            <h6 class="my-0">Third item</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">$5</span>
+                    </li>
+                    <li class="bg-light text-success list-group-item d-flex justify-content-between ">
+                        <div>
+                            <h6 class="my-0">Promo code</h6>
+                            <small class="text-muted">EXAMPLECODE</small>
+                        </div>
+                        <span class="text-muted">-$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between ">
+                        <div>
+                            <h6 class="my-0">Total(USD)</h6>
+                        </div>
+                        <h6 class="">$20</h6>
+                    </li>
+                </ul>
+                <div class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 order-md-1">
+                <h4 class="mb-3">Billign address</h4>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <lable>First name</lable>
+                        <input type="text" class="form-control" placeholder value required>
+                        <div class="invalid-feedback">
+                            valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <lable>last name</lable>
+                        <input type="text" class="form-control" placeholder value required>
+                        <div class="invalid-feedback">
+                            valid first name is required
+                        </div>
+                    </div>
+                </div>
+             <div class="mt-3 mb-3">
+                <label>Username</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" required placeholder="Username" id="usr" name="username">
+                  <div class="invalid-feedback">
+                    ko co
+                  </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">Email (Optional)</label>
+                    <input type="text" class="form-control" id="email" required placeholder="you@example.com" name="email" >
+                    <div class="invalid-feedback">
+                        yeah
+                      </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">Address</label>
+                    <input type="text" class="form-control" id="ads" required placeholder="yeah" name="address" >
+                    <div class="invalid-feedback">
+                        ohyeh
+                      </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">Address2 (Optional)</label>
+                    <input type="text" class="form-control" id="ads2" required placeholder="yeah" name="address" >
+                    <div class="invalid-feedback">
+                        ohyehdd
+                      </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">Country</label>
+                    <input type="text" class="form-control" id="ads2" required placeholder="choose..." name="address" >
+                    <div class="invalid-feedback">
+                        ohyehdd
+                      </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">State</label>
+                    <input type="text" class="form-control" id="ads2" required placeholder="yeah" name="address" >
+                    <div class="invalid-feedback">
+                        ohyehdd
+                      </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">Zip</label>
+                    <input type="text" class="form-control" id="ads2" required placeholder name="address" >
+                    <div class="invalid-feedback">
+                        ohyehdd
+                      </div>
+                </div>
+            </div>
+            <div class="border-top mt-5">
+                <div class="form-check mt-4">
+                    <label class="form-check-label" for="check2">
+                      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                      Shipping address is the same as my billing address
+                    </label>
+                  </div>
+                  <div class="form-check custom-checkbox">
+                    <label class="form-check-label " for="check2">
+                      <input type="checkbox" class="form-check-input " id="check2" name="option2" value="something">
+                      Save this information for next time
+                    </label>
+                  </div>
+            </div>
+            <div class="border-top mt-4">
+                <h3 class="mt-3">Payment</h3>
+                <div class="form-check ">
+                    <label class="form-check-label" for="check2">
+                      <input type="radio" class="form-check-input" id="check2" name="option2" value="something">
+                      Credit card
+                    </label>
+                  </div>
+                  <div class="form-check custom-checkbox">
+                    <label class="form-check-label " for="check2">
+                      <input type="radio" class="form-check-input " id="check2" name="option2" value="something">
+                      Debit card
+                    </label>
+                  </div>
+                  <div class="form-check custom-checkbox">
+                    <label class="form-check-label " for="check2">
+                      <input type="radio" class="form-check-input " id="check2" name="option2" value="something">
+                      Paypal
+                    </label>
+                  </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">Name on card</label>
+                    <input type="text" class="form-control" id="ads2" required placeholder name="address" >
+                    <p class="small text-secondary">Full name as displayed on card</p>
+                    <div class="invalid-feedback">
+                        ohyehdd
+                      </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">Expiration</label>
+                    <input type="text" class="form-control" id="ads2" required placeholder name="address" >
+                    <div class="invalid-feedback">
+                        ohyehdd
+                      </div>
+                </div>
+            </div>
+            <div class="mt-3 mb-3">
+                <div class="form-group">
+                    <label for="usr">CVV</label>
+                    <input type="text" class="form-control" id="ads2" required placeholder name="address" >
+                    <div class="invalid-feedback">
+                        ohyehdd
+                      </div>
+                </div>
+            </div>
+            <footer class="border-top mt-4">
+                <button type="button" class="btn btn-primary mt-3 button">Continue to checkout</button>
+                <p class="text-secondary text-center mt-5">&copy 2020-2021 Company Name</p>
+                <div class="text-center mb-3">
+                    <a href="#">Privacy</a>
+                    <a href="#" class="mr-2 ml-2">Terms</a>
+                    <a href="#">Support</a>
+                </div>
+                
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
