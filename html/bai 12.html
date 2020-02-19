@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>khuyến mãi</title>
+        <style>
+            table, td {
+                border: 1px solid darkorange;
+                border-collapse: collapse;
+                padding: 5px;
+                background-color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td>
+                    <input style="width: 250px;" type="text" id="fullName">
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td>
+                    <input style="width: 200px;" type="text" id="address">
+                </td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td>
+                    <input style="width: 150px;" type="text" id="phone">
+                </td>
+            </tr>
+            <tr>
+                <td>Phái</td>
+                <td>
+                    <input type="radio" name="gender"> Nam 
+                    <input type="radio" name="gender"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select>
+                        <option>Giáo viên</option>
+                        <option>Ca sĩ</option>
+                        <option>kỹ sư</option>
+                        <option>Nhà báo</option>
+                        <option selected>Cầu thủ</option>
+                        <option>Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select size="4" multiple style="overflow-y: hidden;">
+                        <option>Kem đánh răng</option>
+                        <option>Bột giặt</option>
+                        <option>Giầu gội đầu</option>
+                        <option>Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td>
+                    <input type="text" style="width: 150px;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button onclick="myFunction()">Đồng ý</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="success" style="text-align: center; color: sandybrown;"></td>
+            </tr>
+        </table>
+        <script>
+            function myFunction() {
+                document.getElementById('success').innerText = 
+                "Bạn đã đăng ký thành công!!!"
+            }
+        </script>
+    </body>
+</html>
